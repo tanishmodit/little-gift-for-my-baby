@@ -1,16 +1,83 @@
+<!-- FILE: no.html -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wait What?! 😢</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Are You Serious? 💔</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .container {
+      background: #fff5f5;
+      padding: 30px 20px;
+      border-radius: 20px;
+      max-width: 90vw;
+      width: 500px;
+      box-shadow: 0 0 20px rgba(173, 216, 230, 0.4);
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.8rem;
+      color: #c2185b;
+      margin-bottom: 20px;
+    }
+    .btn-container {
+      margin-top: 20px;
+    }
+    .btn {
+      padding: 10px 20px;
+      font-size: 1rem;
+      margin: 10px;
+      background-color: #64b5f6;
+      border: none;
+      color: white;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #42a5f5;
+    }
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 1.4rem;
+      }
+      .btn {
+        font-size: 0.95rem;
+        padding: 8px 16px;
+      }
+    }
+    .hearts {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+  </style>
 </head>
 <body>
   <div class="hearts"></div>
   <div class="container">
-    <h1>Are you serious? 😭</h1>
-    <a href="final.html" class="btn">Yes</a>
-    <a href="page2.html" class="btn">No, I was kidding 😅</a>
+    <h1>Are you serious? 😢</h1>
+    <div class="btn-container">
+      <a href="final.html"><button class="btn">Yes 😔</button></a>
+      <a href="no.html"><button class="btn">No, I was kidding 😅</button></a>
+    </div>
   </div>
   <script src="hearts.js"></script>
 </body>
